@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "modulos": {
+    "kicker_h1_intro": {
+      "nombre": "Kicker + H1 + Intro",
+      "descripcion": "Cabecera del artículo con contexto, título principal e introducción",
+      "html": "<span class=\"kicker\">{{tema}} · {{año}} · {{plataforma}}</span>\n<h1><strong>{{título_spoke_es_rae}}</strong></h1>\n<p>{{intro_con_1_2_keywords}}</p>",
+      "variables": ["tema", "año", "plataforma", "título_spoke_es_rae", "intro_con_1_2_keywords"]
+    },
+    "chips": {
+      "nombre": "Badges/Chips de keywords",
+      "descripcion": "Chips visuales con keywords principales",
+      "html": "<div class=\"badges\">\n  <span class=\"badge\">{{kw_var_1}}</span>\n  <span class=\"badge\">{{kw_var_2}}</span>\n  <span class=\"badge\">{{kw_var_3}}</span>\n</div>",
+      "variables": ["kw_var_1", "kw_var_2", "kw_var_3"],
+      "notas": "Pueden ser 3-5 chips según cantidad de keywords"
+    },
+    "toc": {
+      "nombre": "Índice/TOC",
+      "descripcion": "Tabla de contenidos con anclas a secciones",
+      "html": "<div class=\"toc\">\n  <h4><strong>índice rápido</strong></h4>\n  <a href=\"#s1\">{{sección_1}}</a>\n  <a href=\"#s2\">{{sección_2}}</a>\n  <a href=\"#faqs\">preguntas frecuentes</a>\n</div>",
+      "variables": ["sección_1", "sección_2", "sección_n"]
+    },
+    "callout_principal": {
+      "nombre": "Callout principal",
+      "descripcion": "Destacado con información clave",
+      "html": "<div class=\"callout\"><strong>clave:</strong> {{beneficio_principal_medido}}</div>",
+      "variables": ["beneficio_principal_medido"]
+    },
+    "callout_accent": {
+      "nombre": "Callout con acento",
+      "descripcion": "Destacado con color accent para uso recomendado",
+      "html": "<div class=\"callout accent\"><strong>uso recomendado:</strong> {{perfil_ideal}}</div>",
+      "variables": ["perfil_ideal"]
+    },
+    "lt_benchmarks": {
+      "nombre": "ListTable Benchmarks (2 cols)",
+      "descripcion": "Tabla de benchmarks con 2 columnas",
+      "html": "<p class=\"note\">benchmarks {{modelo_vs_competidor}}</p>\n<div class=\"lt cols-2 zebra\" role=\"table\" aria-label=\"benchmarks\">\n  <div class=\"r\">\n    <div class=\"c\"><strong>aplicación</strong></div>\n    <div class=\"c\"><strong>ventaja (hasta)</strong></div>\n  </div>\n  <div class=\"r\">\n    <div class=\"c\">{{app_1}}</div>\n    <div class=\"c\"><strong>{{ventaja_1}}</strong></div>\n  </div>\n  <!-- más filas -->\n</div>",
+      "variables": ["modelo_vs_competidor", "app_n", "ventaja_n"],
+      "notas": "Usar zebra para mejor legibilidad"
+    },
+    "lt_comparador": {
+      "nombre": "ListTable Comparador (7 cols)",
+      "descripcion": "Tabla comparativa detallada con 7 columnas de specs",
+      "html": "<p class=\"note\">especificaciones clave</p>\n<div class=\"lt cols-7\" role=\"table\" aria-label=\"comparador rápido\">\n  <div class=\"r\">\n    <div class=\"c\"><strong>modelo</strong></div>\n    <div class=\"c\"><strong>núcleos/hilos</strong></div>\n    <div class=\"c\"><strong>caché</strong></div>\n    <div class=\"c\"><strong>memoria</strong></div>\n    <div class=\"c\"><strong>pcie</strong></div>\n    <div class=\"c\"><strong>socket/chipset</strong></div>\n    <div class=\"c\"><strong>isa</strong></div>\n  </div>\n  <div class=\"r\">\n    <div class=\"c\"><strong>{{modelo}}</strong></div>\n    <div class=\"c\">{{cores}}</div>\n    <div class=\"c\">{{cache}}</div>\n    <div class=\"c\">{{memoria}}</div>\n    <div class=\"c\">{{pcie}}</div>\n    <div class=\"c\">{{socket}}</div>\n    <div class=\"c\">{{isa}}</div>\n  </div>\n</div>",
+      "variables": ["modelo", "cores", "cache", "memoria", "pcie", "socket", "isa"],
+      "notas": "Responsive: 2 cols en móvil, 7 cols en desktop"
+    },
+    "cards": {
+      "nombre": "Cards (3 columnas)",
+      "descripcion": "Tarjetas con perfiles de uso",
+      "html": "<div class=\"grid cols-3\">\n  <div class=\"card\">\n    <h4><strong>{{perfil_a}}</strong></h4>\n    <p class=\"why\">{{caso_uso_a}}</p>\n  </div>\n  <div class=\"card\">\n    <h4><strong>{{perfil_b}}</strong></h4>\n    <p class=\"why\">{{caso_uso_b}}</p>\n  </div>\n  <div class=\"card\">\n    <h4><strong>{{perfil_c}}</strong></h4>\n    <p class=\"why\">{{caso_uso_c}}</p>\n  </div>\n</div>",
+      "variables": ["perfil_a", "caso_uso_a", "perfil_b", "caso_uso_b", "perfil_c", "caso_uso_c"],
+      "notas": "Responsive: 1 col en móvil, 3 cols en desktop"
+    },
+    "cta_dual": {
+      "nombre": "CTA Dual",
+      "descripcion": "Dos botones de llamada a la acción",
+      "html": "<div class=\"btns\">\n  <a class=\"btn primary\" href=\"{{url_1}}?{{UTM_INTERNA}}\">{{cta_primario}}</a>\n  <a class=\"btn ghost\" href=\"{{url_2}}?{{UTM_INTERNA}}\">{{cta_secundario}}</a>\n</div>",
+      "variables": ["url_1", "cta_primario", "url_2", "cta_secundario", "UTM_INTERNA"],
+      "notas": "Siempre incluir UTM en enlaces"
+    },
+    "faqs": {
+      "nombre": "FAQs visibles",
+      "descripcion": "Sección de preguntas frecuentes sin desplegables",
+      "html": "<h2 id=\"faqs\"><strong>preguntas frecuentes sobre {{kw_principal}}</strong></h2>\n<h3><strong>{{pregunta_1}}</strong></h3>\n<p>{{respuesta_1}}</p>\n<h3><strong>{{pregunta_2}}</strong></h3>\n<p>{{respuesta_2}}</p>\n<!-- 4-6 preguntas total -->",
+      "variables": ["kw_principal", "pregunta_n", "respuesta_n"],
+      "notas": "Mínimo 4, máximo 7 preguntas. Usar para JSON-LD"
+    },
+    "glosario": {
+      "nombre": "Glosario",
+      "descripcion": "Definiciones de términos técnicos",
+      "html": "<h2 id=\"glosario\"><strong>glosario rápido</strong></h2>\n<p><strong>{{término_1}}:</strong> {{definición_1}}</p>\n<p><strong>{{término_2}}:</strong> {{definición_2}}</p>",
+      "variables": ["término_n", "definición_n"],
+      "notas": "Definir siglas y términos técnicos que aparecen en el artículo"
+    }
+  }
+}
