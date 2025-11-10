@@ -1,0 +1,64 @@
+{
+  "version": "2.0.0",
+  "validacion": {
+    "C1": {
+      "nombre": "Cobertura Keywords",
+      "criterio": "≥80% de keywords presentes",
+      "como_medir": "Contar apariciones de K en H1, H2, H3, párrafos, chips, .lt",
+      "peso": 15
+    },
+    "C2": {
+      "nombre": "Readability",
+      "criterio": "≥55 score Flesch-Szigriszt (es-ES)",
+      "como_medir": "Párrafos ≤140 palabras, frases variadas",
+      "peso": 10
+    },
+    "C3": {
+      "nombre": "SERP Coverage (PAA)",
+      "criterio": "≥0.7 cobertura de preguntas frecuentes",
+      "como_medir": "≥8% del texto en preguntas directas (VSO)",
+      "peso": 15
+    },
+    "C4": {
+      "nombre": "Enlazado interno",
+      "criterio": "Enlaces variados con UTM",
+      "como_medir": "≥3 enlaces internos con UTM_INTERNA correcta",
+      "peso": 10
+    },
+    "C5": {
+      "nombre": "Headings RAE",
+      "criterio": "Todos los H1-H6 en estilo oración",
+      "como_medir": "Solo primera letra mayúscula + excepciones (siglas/marcas)",
+      "peso": 10
+    },
+    "C6": {
+      "nombre": "Tablas .lt",
+      "criterio": "NO usar <table>, solo .lt con CSS Grid",
+      "como_medir": "0 apariciones de <table>, ≥1 .lt presente",
+      "peso": 10
+    },
+    "C7": {
+      "nombre": "CTA dual",
+      "criterio": "2 CTAs con UTM",
+      "como_medir": "Presencia de .btn.primary y .btn.ghost con UTM",
+      "peso": 10
+    },
+    "C8": {
+      "nombre": "JSON-LD FAQPage",
+      "criterio": "Schema válido con 4-6 preguntas",
+      "como_medir": "Validar estructura JSON-LD",
+      "peso": 10
+    },
+    "C9": {
+      "nombre": "Anti-IA",
+      "criterio": "Sin señales de generación automática",
+      "como_medir": "0 placeholders, 0 weasel words, variación sintáctica",
+      "peso": 10
+    }
+  },
+  "score_total": {
+    "formula": "Σ(Ci × peso_i) / Σ(peso_i)",
+    "minimo_aprobado": 75,
+    "optimo": 90
+  }
+}
