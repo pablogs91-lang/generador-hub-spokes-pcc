@@ -1,0 +1,398 @@
+{
+  "version": "1.0.0",
+  "ultima_actualizacion": "2025-11-10",
+  "total_arquetipos": 40,
+  "arquetipos": [
+    {
+      "id": "accesorios-complementos",
+      "nombre": "Accesorios y complementos esenciales",
+      "categoria": "guias",
+      "descripcion": "Guía de accesorios imprescindibles para un producto principal",
+      "keywords_sugeridas": ["accesorios", "complementos", "esenciales", "necesitas"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 70
+    },
+    {
+      "id": "analisis-retro",
+      "nombre": "Análisis retro / consola vintage",
+      "categoria": "reviews",
+      "descripcion": "Revisión nostálgica de tecnología clásica",
+      "keywords_sugeridas": ["retro", "clásico", "vintage", "nostalgia"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 30
+    },
+    {
+      "id": "batalla-specs",
+      "nombre": "Batalla de specs / Decodificador de marketing",
+      "categoria": "educativo",
+      "descripcion": "Explicación de especificaciones técnicas y términos de marketing",
+      "keywords_sugeridas": ["specs", "especificaciones", "qué significa", "explicado"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 20
+    },
+    {
+      "id": "benchmarks-pruebas",
+      "nombre": "Benchmarks y pruebas",
+      "categoria": "tecnico",
+      "descripcion": "Tests de rendimiento con datos y gráficas",
+      "keywords_sugeridas": ["benchmark", "rendimiento", "fps", "velocidad", "test"],
+      "ciclo_vida_recomendado": "Producto-específico",
+      "intencion_optima": 45
+    },
+    {
+      "id": "build-completa",
+      "nombre": "Build completa / Configuración PC",
+      "categoria": "guias",
+      "descripcion": "Guía paso a paso para montar un PC completo",
+      "keywords_sugeridas": ["montar pc", "build", "configuración", "componentes"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 75
+    },
+    {
+      "id": "casos-uso-profesional",
+      "nombre": "Casos de uso profesional",
+      "categoria": "educativo",
+      "descripcion": "Aplicaciones en entornos de trabajo específicos",
+      "keywords_sugeridas": ["profesional", "trabajo", "productividad", "uso"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 55
+    },
+    {
+      "id": "comparativa-ab",
+      "nombre": "Comparativa A vs B",
+      "categoria": "comparativas",
+      "descripcion": "Enfrentamiento directo entre dos productos",
+      "keywords_sugeridas": ["vs", "comparativa", "diferencias", "mejor", "cuál elegir"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 70
+    },
+    {
+      "id": "comparativa-multimodelo",
+      "nombre": "Comparativa multimodelo (3-5 productos)",
+      "categoria": "comparativas",
+      "descripcion": "Análisis comparativo de múltiples opciones",
+      "keywords_sugeridas": ["mejores", "comparativa", "opciones", "cuál comprar"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 75
+    },
+    {
+      "id": "entrevista-fondo",
+      "nombre": "Entrevista / A fondo",
+      "categoria": "contenido",
+      "descripcion": "Entrevista en profundidad con experto o figura relevante",
+      "keywords_sugeridas": ["entrevista", "conversación", "opinión", "experto"],
+      "ciclo_vida_recomendado": "Caduco",
+      "intencion_optima": 15
+    },
+    {
+      "id": "guia-how-to",
+      "nombre": "Guía / How-to",
+      "categoria": "tutoriales",
+      "descripcion": "Tutorial paso a paso para realizar una tarea",
+      "keywords_sugeridas": ["cómo", "guía", "tutorial", "paso a paso"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 30
+    },
+    {
+      "id": "guia-actualizacion",
+      "nombre": "Guía de actualización / renovación",
+      "categoria": "guias",
+      "descripcion": "Cuándo y cómo actualizar tu equipo o componente",
+      "keywords_sugeridas": ["actualizar", "upgrade", "renovar", "cuándo cambiar"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 65
+    },
+    {
+      "id": "guia-compra-perfil",
+      "nombre": "Guía de compra por perfil",
+      "categoria": "guias",
+      "descripcion": "Recomendaciones según tipo de usuario",
+      "keywords_sugeridas": ["mejor", "guía", "comprar", "elegir", "recomendaciones"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 75
+    },
+    {
+      "id": "guia-compra-precio",
+      "nombre": "Guía de compra por rango de precio",
+      "categoria": "guias",
+      "descripcion": "Mejores opciones por presupuesto",
+      "keywords_sugeridas": ["precio", "presupuesto", "barato", "económico", "gama"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 80
+    },
+    {
+      "id": "guia-iniciacion",
+      "nombre": "Guía de iniciación",
+      "categoria": "tutoriales",
+      "descripcion": "Introducción completa para principiantes absolutos",
+      "keywords_sugeridas": ["principiantes", "empezar", "iniciación", "básico"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 25
+    },
+    {
+      "id": "guia-instalacion",
+      "nombre": "Guía de instalación / montaje",
+      "categoria": "tutoriales",
+      "descripcion": "Instrucciones detalladas de instalación física o software",
+      "keywords_sugeridas": ["instalar", "montar", "configurar", "setup"],
+      "ciclo_vida_recomendado": "Producto-específico",
+      "intencion_optima": 40
+    },
+    {
+      "id": "guia-optimizacion",
+      "nombre": "Guía de optimización / mejora",
+      "categoria": "tutoriales",
+      "descripcion": "Cómo sacar el máximo partido a tu equipo",
+      "keywords_sugeridas": ["optimizar", "mejorar", "rendimiento", "acelerar"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 35
+    },
+    {
+      "id": "historia-biografia",
+      "nombre": "Historia / Biografía",
+      "categoria": "contenido",
+      "descripcion": "Historia de una tecnología, marca o personaje",
+      "keywords_sugeridas": ["historia", "evolución", "origen", "biografía"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 10
+    },
+    {
+      "id": "listados-indices",
+      "nombre": "Listados / Índices exhaustivos",
+      "categoria": "referencia",
+      "descripcion": "Compilación completa de datos o recursos",
+      "keywords_sugeridas": ["lista", "todos", "completo", "índice"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 40
+    },
+    {
+      "id": "mantenimiento-cuidado",
+      "nombre": "Mantenimiento y cuidado",
+      "categoria": "tutoriales",
+      "descripcion": "Cómo mantener tu equipo en óptimas condiciones",
+      "keywords_sugeridas": ["mantenimiento", "cuidado", "limpiar", "conservar"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 30
+    },
+    {
+      "id": "matrices-compatibilidad",
+      "nombre": "Matrices de compatibilidad / Ecosistema",
+      "categoria": "referencia",
+      "descripcion": "Qué funciona con qué, compatibilidades",
+      "keywords_sugeridas": ["compatible", "funciona con", "soporta", "ecosistema"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 45
+    },
+    {
+      "id": "mitos-realidad",
+      "nombre": "Mitos vs realidad",
+      "categoria": "educativo",
+      "descripcion": "Desmontando creencias erróneas populares",
+      "keywords_sugeridas": ["mito", "realidad", "verdad", "falso", "desmentir"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 20
+    },
+    {
+      "id": "noticia-explicador",
+      "nombre": "Noticia / Explicador",
+      "categoria": "contenido",
+      "descripcion": "Explicación en profundidad de una noticia reciente",
+      "keywords_sugeridas": ["noticia", "lanzamiento", "anuncio", "nuevo"],
+      "ciclo_vida_recomendado": "News-driven",
+      "intencion_optima": 35
+    },
+    {
+      "id": "ofertas-chollos",
+      "nombre": "Ofertas / Chollos curados",
+      "categoria": "comercial",
+      "descripcion": "Selección de ofertas destacadas y verificadas",
+      "keywords_sugeridas": ["oferta", "descuento", "chollo", "precio", "deal"],
+      "ciclo_vida_recomendado": "Caduco",
+      "intencion_optima": 90
+    },
+    {
+      "id": "onboarding-puesta-punto",
+      "nombre": "Onboarding / Puesta a punto",
+      "categoria": "tutoriales",
+      "descripcion": "Primeros pasos tras comprar un producto",
+      "keywords_sugeridas": ["primeros pasos", "configurar", "empezar", "setup inicial"],
+      "ciclo_vida_recomendado": "Producto-específico",
+      "intencion_optima": 50
+    },
+    {
+      "id": "opinion-editorial",
+      "nombre": "Opinión / editorial / think piece",
+      "categoria": "contenido",
+      "descripcion": "Análisis de opinión sobre tendencias o temas",
+      "keywords_sugeridas": ["opinión", "análisis", "reflexión", "tendencias"],
+      "ciclo_vida_recomendado": "Caduco",
+      "intencion_optima": 15
+    },
+    {
+      "id": "preguntas-frecuentes",
+      "nombre": "Preguntas frecuentes (FAQ)",
+      "categoria": "referencia",
+      "descripcion": "Compilación de dudas comunes y respuestas",
+      "keywords_sugeridas": ["faq", "preguntas", "dudas", "respuestas"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 35
+    },
+    {
+      "id": "reacondicionados",
+      "nombre": "Reacondicionados / Segunda mano",
+      "categoria": "guias",
+      "descripcion": "Guía para comprar productos reacondicionados",
+      "keywords_sugeridas": ["reacondicionado", "segunda mano", "usado", "refurbished"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 70
+    },
+    {
+      "id": "requisitos-funcionara",
+      "nombre": "Requisitos / ¿Me funcionará?",
+      "categoria": "referencia",
+      "descripcion": "Requisitos técnicos y compatibilidad",
+      "keywords_sugeridas": ["requisitos", "compatibilidad", "funciona", "necesito"],
+      "ciclo_vida_recomendado": "Producto-específico",
+      "intencion_optima": 40
+    },
+    {
+      "id": "review-producto",
+      "nombre": "Review / Análisis de producto",
+      "categoria": "reviews",
+      "descripcion": "Análisis en profundidad de un producto específico",
+      "keywords_sugeridas": ["análisis", "review", "opinión", "prueba", "test"],
+      "ciclo_vida_recomendado": "Producto-específico",
+      "intencion_optima": 65
+    },
+    {
+      "id": "roadmap-calendario",
+      "nombre": "Roadmap / Calendario de actualizaciones",
+      "categoria": "referencia",
+      "descripcion": "Planificación de lanzamientos y actualizaciones",
+      "keywords_sugeridas": ["roadmap", "calendario", "lanzamientos", "próximos"],
+      "ciclo_vida_recomendado": "Caduco",
+      "intencion_optima": 25
+    },
+    {
+      "id": "roundup-mejores",
+      "nombre": "Roundup / Mejores X",
+      "categoria": "comparativas",
+      "descripcion": "Recopilación de las mejores opciones en una categoría",
+      "keywords_sugeridas": ["mejores", "top", "ranking", "recomendados"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 80
+    },
+    {
+      "id": "rumor-filtraciones",
+      "nombre": "Rumor / filtraciones",
+      "categoria": "contenido",
+      "descripcion": "Análisis de rumores y leaks sobre próximos productos",
+      "keywords_sugeridas": ["rumor", "filtración", "leak", "especulación"],
+      "ciclo_vida_recomendado": "Trending",
+      "intencion_optima": 30
+    },
+    {
+      "id": "seguridad-privacidad",
+      "nombre": "Seguridad y privacidad",
+      "categoria": "educativo",
+      "descripcion": "Aspectos de seguridad y protección de datos",
+      "keywords_sugeridas": ["seguridad", "privacidad", "proteger", "seguro"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 35
+    },
+    {
+      "id": "sostenibilidad-consumo",
+      "nombre": "Sostenibilidad y consumo energético",
+      "categoria": "educativo",
+      "descripcion": "Impacto ambiental y eficiencia energética",
+      "keywords_sugeridas": ["consumo", "eficiencia", "sostenible", "ecológico"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 40
+    },
+    {
+      "id": "troubleshooting",
+      "nombre": "Troubleshooting / Solución de problemas",
+      "categoria": "tutoriales",
+      "descripcion": "Diagnóstico y solución de problemas comunes",
+      "keywords_sugeridas": ["problema", "error", "solución", "arreglar", "no funciona"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 35
+    },
+    {
+      "id": "tu-primer",
+      "nombre": "Tu primer... / Guías para principiantes absolutos",
+      "categoria": "tutoriales",
+      "descripcion": "Primera experiencia con una categoría de producto",
+      "keywords_sugeridas": ["primer", "principiante", "empezar", "inicio"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 60
+    },
+    {
+      "id": "tutorial-10-trucos",
+      "nombre": "Tutorial: 10 trucos / hacks",
+      "categoria": "tutoriales",
+      "descripcion": "Lista de consejos prácticos y trucos útiles",
+      "keywords_sugeridas": ["trucos", "consejos", "tips", "hacks", "secretos"],
+      "ciclo_vida_recomendado": "Evergreen puro",
+      "intencion_optima": 25
+    },
+    {
+      "id": "upgrade-paths",
+      "nombre": "Upgrade paths / Rutas de actualización",
+      "categoria": "guias",
+      "descripcion": "Estrategias de actualización progresiva",
+      "keywords_sugeridas": ["actualizar", "upgrade", "ruta", "evolución"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 65
+    },
+    {
+      "id": "ventajas-desventajas",
+      "nombre": "Ventajas vs desventajas / pros y contras",
+      "categoria": "educativo",
+      "descripcion": "Análisis equilibrado de puntos fuertes y débiles",
+      "keywords_sugeridas": ["ventajas", "desventajas", "pros", "contras", "vale la pena"],
+      "ciclo_vida_recomendado": "Evergreen actualizable",
+      "intencion_optima": 55
+    }
+  ],
+  "categorias_arquetipos": {
+    "reviews": ["review-producto", "analisis-retro", "benchmarks-pruebas"],
+    "comparativas": ["comparativa-ab", "comparativa-multimodelo", "roundup-mejores"],
+    "guias": ["guia-compra-perfil", "guia-compra-precio", "build-completa", "guia-actualizacion", "accesorios-complementos", "reacondicionados", "upgrade-paths"],
+    "tutoriales": ["guia-how-to", "guia-iniciacion", "guia-instalacion", "guia-optimizacion", "mantenimiento-cuidado", "onboarding-puesta-punto", "troubleshooting", "tu-primer", "tutorial-10-trucos"],
+    "educativo": ["batalla-specs", "casos-uso-profesional", "mitos-realidad", "seguridad-privacidad", "sostenibilidad-consumo", "ventajas-desventajas"],
+    "referencia": ["listados-indices", "matrices-compatibilidad", "preguntas-frecuentes", "requisitos-funcionara", "roadmap-calendario"],
+    "contenido": ["entrevista-fondo", "historia-biografia", "noticia-explicador", "opinion-editorial", "rumor-filtraciones"],
+    "comercial": ["ofertas-chollos"]
+  },
+  "ciclos_vida": {
+    "Evergreen puro": {
+      "descripcion": "Contenido atemporal que no requiere actualización",
+      "ejemplos": ["guia-how-to", "historia-biografia", "tutorial-10-trucos"]
+    },
+    "Evergreen actualizable": {
+      "descripcion": "Contenido duradero pero que requiere actualizaciones periódicas",
+      "ejemplos": ["comparativa-ab", "guia-compra-perfil", "roundup-mejores"]
+    },
+    "Caduco": {
+      "descripcion": "Contenido con fecha de caducidad definida",
+      "ejemplos": ["ofertas-chollos", "entrevista-fondo", "opinion-editorial"]
+    },
+    "Estacional": {
+      "descripcion": "Contenido relevante en momentos específicos del año",
+      "ejemplos": ["guias-black-friday", "setup-verano-gaming"]
+    },
+    "Trending": {
+      "descripcion": "Contenido sobre temas de actualidad temporal",
+      "ejemplos": ["rumor-filtraciones", "lanzamiento-producto"]
+    },
+    "News-driven": {
+      "descripcion": "Contenido impulsado por noticias recientes",
+      "ejemplos": ["noticia-explicador", "analisis-anuncio"]
+    },
+    "Producto-específico": {
+      "descripcion": "Contenido vinculado a un producto concreto",
+      "ejemplos": ["review-producto", "guia-instalacion", "requisitos-funcionara"]
+    }
+  }
+}
