@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "templates": {
+    "generar_titulos": {
+      "nombre": "Generación de 5 títulos SEO/AEO",
+      "prompt_base": "Actúa como estratega y redactor técnico es-ES (RAE), especializado en hardware/IA/PC.\n\nTAREA: Generar 5 títulos SEO/AEO para un artículo spoke.\n\nCONTEXTO:\n- Tema: {{TÓPICO}}\n- Keywords: {{K}}\n- Audiencia: {{AUDIENCIA}}\n- Intención: {{INTENT}}\n\nREGLAS CRÍTICAS DE CAPITALIZACIÓN (es-ES):\n1. SOLO primera letra de la oración en mayúscula\n2. Mantener mayúsculas en SIGLAS: CPU, GPU, NPU, APU, SoC, LLM, IA, AI, AVX-512, DDR5, PCIe, NVMe, ECC, VBS, HVCI, TPM 2.0, EDR\n3. Mantener mayúsculas en nombres propios: Intel, AMD, Ryzen, Threadripper, Core Ultra, Windows, Copilot, OpenVINO, DirectML, ONNX Runtime\n4. NO usar Title Case\n\nEJEMPLO CORRECTO: \"Mejores CPU con NPU: guía 2025\"\nEJEMPLO INCORRECTO: \"Mejores Cpu Con Npu: Guía 2025\"\n\nREQUISITOS:\n- Estilo oración (solo primera letra en mayúscula)\n- Incluir 2-3 términos de {{K}}\n- Sin clickbait literal\n- Longitud ≤65 caracteres\n\nGenera SOLO los 5 títulos numerados, nada más.",
+      "variables": ["TÓPICO", "K", "AUDIENCIA", "INTENT"]
+    },
+    "generar_outline": {
+      "nombre": "Generación de outline detallado",
+      "prompt_base": "Actúa como estratega y redactor técnico es-ES (RAE), especializado en hardware/IA/PC.\n\nTAREA: Generar OUTLINE detallado para artículo spoke.\n\nTÍTULO SELECCIONADO: {{T}}\n\nCONTEXTO:\n- Keywords: {{K}}\n- Audiencia: {{AUDIENCIA}}\n- Longitud: {{LENGTH_SELECTOR}}\n- Intención: {{INTENT}}\n\nESTRUCTURA REQUERIDA:\n1. Meta título y descripción\n2. Kicker + H1 + intro (≤140 palabras)\n3. Badges (3-5 chips con keywords)\n4. Índice (TOC con anclas)\n5. Callouts (clave + uso recomendado)\n6. H2/H3 jerárquicos con módulos visuales\n7. Ubicación de .lt (benchmarks cols-2 y comparador cols-7)\n8. Cards (perfiles de uso)\n9. FAQs (H2 + 4-6 H3 + respuestas)\n10. Glosario (términos técnicos)\n11. CTAs duales con UTM\n\nREGLAS:\n- Headings en estilo oración (solo primera letra mayúscula)\n- Mantener siglas y nombres propios en mayúscula\n- Párrafos ≤140 palabras\n- ≥8% preguntas directas\n\nGenera el outline completo con estructura clara.",
+      "variables": ["T", "K", "AUDIENCIA", "LENGTH_SELECTOR", "INTENT"]
+    },
+    "generar_html": {
+      "nombre": "Generación de artículo HTML completo",
+      "prompt_base": "Actúa como estratega y redactor técnico es-ES (RAE), especializado en hardware/IA/PC.\n\nTAREA: Generar artículo HTML COMPLETO según outline aprobado.\n\nTÍTULO: {{T}}\nOUTLINE APROBADO:\n{{OUTLINE}}\n\nCONTEXTO COMPLETO:\n- Keywords: {{K}}\n- Audiencia: {{AUDIENCIA}}\n- Intención: {{INTENT}}\n- Longitud: {{LENGTH_SELECTOR}}\n- Style variant: {{STYLE_VARIANT}}\n- Naturalidad: {{NATURALIDAD_FACTOR}}\n- Enlaces productos: {{ENLACES_PRODUCTO}}\n{{#if RAW_CONTENT}}\n- Contenido base: {{RAW_CONTENT}}\n{{/if}}\n\nINSTRUCCIONES CRÍTICAS:\n\n=== CSS ===\nIncluir al inicio del HTML el CSS completo del sistema (disponible en data/css-completo.json)\n\n=== ESTRUCTURA HTML ===\n1. Kicker + H1 + intro\n2. Badges (chips con keywords)\n3. TOC\n4. Callouts (primario + acento)\n5. Secciones H2/H3 con contenido\n6. .lt cols-2 (benchmarks)\n7. .lt cols-7 (comparador)\n8. Cards (perfiles)\n9. FAQs visibles (4-6 H3)\n10. Glosario\n11. CTAs duales con UTM\n\n=== REGLAS CRÍTICAS ===\n- Headings: SOLO primera letra en mayúscula\n- Mantener siglas: CPU, GPU, NPU, DDR5, etc.\n- Mantener marcas: Intel, AMD, Windows, etc.\n- Párrafos ≤140 palabras\n- ≥8% preguntas directas\n- Sin placeholders ni comentarios HTML\n- Enlaces con UTM: {{UTM_INTERNA}}\n\n=== CONTROL DE CALIDAD ===\n- AdjetivosÚtiles ≤ ⌈Npalabras/50⌉\n- Máx. 2 adjetivos por párrafo\n- Evitar: revolucionario, definitivo, disruptivo\n- Priorizar: datos, benchmarks, casos de uso\n\n=== ANTI-IA ===\n- Variar longitud de frases\n- Cohesión entre párrafos\n- Sin plantillas rígidas\n- Naturalidad con factor {{NATURALIDAD_FACTOR}}\n\nGENERA AHORA EL HTML COMPLETO.",
+      "variables": ["T", "OUTLINE", "K", "AUDIENCIA", "INTENT", "LENGTH_SELECTOR", "STYLE_VARIANT", "NATURALIDAD_FACTOR", "ENLACES_PRODUCTO", "UTM_INTERNA", "RAW_CONTENT"]
+    },
+    "generar_metas": {
+      "nombre": "Generación de metadatos",
+      "prompt_base": "Genera metadatos para el artículo:\n\nTÍTULO: {{T}}\nKEYWORDS: {{K}}\n\nFORMATO:\n\nMeta título: [≤65 caracteres, estilo oración, 1 KW + beneficio]\nMeta descripción: [≤160 caracteres, ventaja + perfil + CTA suave]\n\nTL;DR:\n[2-3 frases: qué es/resuelve + dato medible + decisión práctica]\n\nImagen título: [{{kw_principal}} — {{contexto}}]\nImagen alt: [{{acción/objeto}} con {{kw_principal}} en {{contexto}}]\n\nJSON-LD FAQPage:\n[Código JSON-LD completo con 4-6 preguntas del artículo]",
+      "variables": ["T", "K"]
+    },
+    "corregir_capitalizacion": {
+      "nombre": "Corrección de capitalización RAE",
+      "prompt_base": "Revisa y corrige la capitalización de los siguientes headings según normas RAE:\n\n{{HEADINGS}}\n\nREGLAS:\n1. Solo primera letra de la oración en mayúscula\n2. Mantener mayúsculas en SIGLAS: {{SIGLAS_EXCEPCIONES}}\n3. Mantener mayúsculas en marcas: {{MARCAS_EXCEPCIONES}}\n4. NO usar Title Case\n5. Tras ': . ? !' mantener sentence case\n\nDevuelve SOLO los headings corregidos, uno por línea.",
+      "variables": ["HEADINGS", "SIGLAS_EXCEPCIONES", "MARCAS_EXCEPCIONES"]
+    },
+    "fusionar_contenido": {
+      "nombre": "Fusión de contenido existente con outline",
+      "prompt_base": "Fusiona el siguiente contenido existente con el outline generado:\n\nCONTENIDO EXISTENTE:\n{{RAW_CONTENT}}\n\nOUTLINE NUEVO:\n{{OUTLINE}}\n\nINSTRUCCIONES:\n1. Reescribir contenido según estructura del outline\n2. Mantener datos y cifras del contenido original\n3. Integrar keywords: {{K}}\n4. Convertir tablas <table> a .lt\n5. Añadir módulos visuales faltantes\n6. Aplicar naturalidad factor: {{NATURALIDAD_FACTOR}}\n7. Evitar duplicados\n8. Coherencia entre secciones\n\nGENERA EL HTML COMPLETO FUSIONADO.",
+      "variables": ["RAW_CONTENT", "OUTLINE", "K", "NATURALIDAD_FACTOR"]
+    }
+  },
+  "flujos": {
+    "desde_cero": {
+      "pasos": [
+        "generar_titulos",
+        "generar_outline",
+        "generar_html",
+        "generar_metas"
+      ]
+    },
+    "desde_contenido": {
+      "pasos": [
+        "generar_outline",
+        "fusionar_contenido",
+        "generar_metas"
+      ]
+    },
+    "correccion": {
+      "pasos": [
+        "corregir_capitalizacion",
+        "generar_html"
+      ]
+    }
+  }
+}
