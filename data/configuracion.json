@@ -1,0 +1,131 @@
+{
+  "version": "2.0.0",
+  "audiencias": {
+    "gamer": {
+      "descripcion": "Usuario enfocado en gaming y rendimiento en juegos",
+      "prioridades": ["FPS", "latencia", "overclocking", "cooling"],
+      "tono": "entusiasta, técnico, datos de rendimiento",
+      "keywords_comunes": ["fps", "gaming", "overclocking", "latencia", "refrigeración"]
+    },
+    "consumidor": {
+      "descripcion": "Usuario general, uso doméstico y productividad básica",
+      "prioridades": ["precio", "facilidad de uso", "eficiencia", "silencio"],
+      "tono": "accesible, explicativo, comparativas sencillas",
+      "keywords_comunes": ["mejor", "barato", "económico", "fácil", "silencioso"]
+    },
+    "workstation_pro": {
+      "descripcion": "Profesional creativo, desarrollo, cálculo científico",
+      "prioridades": ["cores", "ECC", "estabilidad", "certificaciones"],
+      "tono": "profesional, técnico profundo, ROI",
+      "keywords_comunes": ["profesional", "workstation", "renderizado", "compilación", "certificado"]
+    },
+    "mixta": {
+      "descripcion": "Audiencia general, equilibrio entre perfiles",
+      "prioridades": ["versatilidad", "precio/rendimiento", "casos de uso variados"],
+      "tono": "equilibrado, datos + accesibilidad",
+      "keywords_comunes": ["mejor", "guía", "comparativa", "recomendaciones"]
+    }
+  },
+  "intenciones": {
+    "informacional": {
+      "rango": "0-40%",
+      "objetivo": "Educar, explicar, responder dudas",
+      "ctas": "suaves (más información, comparar, aprender)",
+      "keywords": ["qué es", "cómo funciona", "diferencias", "explicación"]
+    },
+    "mixta": {
+      "rango": "40-70%",
+      "objetivo": "Informar + orientar compra",
+      "ctas": "equilibradas (ver opciones, comparar precios)",
+      "keywords": ["mejor", "guía", "recomendaciones", "cuál elegir"]
+    },
+    "transaccional": {
+      "rango": "70-100%",
+      "objetivo": "Impulsar conversión y venta",
+      "ctas": "directas (comprar, ver precio, añadir al carrito)",
+      "keywords": ["comprar", "precio", "oferta", "mejor precio", "stock"]
+    }
+  },
+  "longitudes": {
+    "corto": {
+      "palabras": "500-800",
+      "uso": "Respuestas rápidas, FAQs expandidas, noticias",
+      "estructura": "Intro + 2-3 H2 + FAQs + CTA"
+    },
+    "medio": {
+      "palabras": "800-1200",
+      "uso": "Guías específicas, comparativas 2-3 productos",
+      "estructura": "Intro + 3-5 H2 + .lt + Cards + FAQs + CTA"
+    },
+    "largo": {
+      "palabras": "1200-2000",
+      "uso": "Guías completas, reviews profundas, comparativas múltiples",
+      "estructura": "Intro + 5-8 H2 + múltiples .lt + Cards + FAQs + Glosario + CTA"
+    }
+  },
+  "tecnologias_clave": {
+    "cpu": {
+      "terminos": ["núcleos", "hilos", "caché", "TDP", "frecuencia", "IPC", "ISA"],
+      "menciones_obligatorias": ["AVX-512", "DDR5", "PCIe 5.0"],
+      "contexto": "Siempre incluir generación y arquitectura"
+    },
+    "npu": {
+      "terminos": ["TOPS", "INT8", "latencia", "privacidad", "local"],
+      "menciones_obligatorias": ["OpenVINO", "DirectML", "ONNX Runtime"],
+      "contexto": "Diferenciar TOPS peak vs sostenido"
+    },
+    "memoria": {
+      "terminos": ["canales", "velocidad", "latencia", "ECC", "capacidad"],
+      "menciones_obligatorias": ["DDR5", "frecuencia efectiva"],
+      "contexto": "Explicar dual-channel, quad-channel, octo-channel"
+    },
+    "seguridad": {
+      "terminos": ["TPM 2.0", "Secure Boot", "UEFI", "VBS", "HVCI", "Credential Guard", "EDR"],
+      "menciones_obligatorias": ["TPM 2.0", "Secure Boot"],
+      "contexto": "Relevante para Windows 11 y entornos corporativos"
+    }
+  },
+  "utm_templates": {
+    "interna_hub": "utm_source=hub&utm_medium=internal&utm_campaign={{categoria}}&utm_content={{seccion}}",
+    "interna_relacionados": "utm_source=relacionados&utm_medium=internal&utm_campaign={{categoria}}&utm_content=spoke",
+    "producto_directo": "utm_source=spoke&utm_medium=article&utm_campaign={{categoria}}&utm_content={{producto_id}}"
+  },
+  "naturalidad_factor": {
+    "descripcion": "Controla el nivel de 'humanización' del texto",
+    "rango": "0.0 - 0.3",
+    "niveles": {
+      "0.0": "Estructura muy rígida, sintaxis predecible",
+      "0.15": "Equilibrio (recomendado)",
+      "0.3": "Máxima variación, más artículos/pronombres"
+    },
+    "tecnicas": [
+      "Añadir artículos definidos/indefinidos",
+      "Usar pronombres para evitar repeticiones",
+      "Unir frases cortas con conjunciones",
+      "Variar longitud de oraciones",
+      "Incluir incisos ocasionales"
+    ]
+  },
+  "style_variants": {
+    "neo-cards": {
+      "descripcion": "Tarjetas modernas con sombras suaves",
+      "uso": "Reviews, guías de producto, comparativas"
+    },
+    "minimal-lines": {
+      "descripcion": "Líneas minimalistas, máxima legibilidad",
+      "uso": "Tutoriales, FAQs, documentación técnica"
+    },
+    "zebra-rows": {
+      "descripcion": "Énfasis en tablas con filas alternadas",
+      "uso": "Benchmarks, especificaciones, comparadores"
+    },
+    "pill-accent": {
+      "descripcion": "Badges con color accent destacado",
+      "uso": "Artículos transaccionales, ofertas"
+    },
+    "contrast-blocks": {
+      "descripcion": "Callouts con mayor contraste visual",
+      "uso": "Alertas, información crítica, warnings"
+    }
+  }
+}
