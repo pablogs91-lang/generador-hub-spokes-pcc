@@ -1,0 +1,109 @@
+{
+  "version": "2.0.0",
+  "formato_salida": {
+    "A_titulos": {
+      "nombre": "5 títulos SEO/AEO",
+      "cantidad": 5,
+      "formato": "RAE (estilo oración)",
+      "longitud_maxima": 65,
+      "requisitos": [
+        "Incluir 1-2 keywords principales",
+        "Estilo oración (solo primera letra mayúscula)",
+        "Respetar excepciones (siglas/marcas)"
+      ]
+    },
+    "B_outline": {
+      "nombre": "Outline detallado",
+      "contenido": [
+        "Meta título y descripción",
+        "Estructura de headings H1-H6",
+        "Módulos visuales a incluir",
+        "Ubicación de .lt (benchmarks y comparador)",
+        "FAQs planificadas (4-6)",
+        "Enlaces internos con UTM",
+        "CTAs duales"
+      ]
+    },
+    "C_articulo_html": {
+      "nombre": "Artículo HTML completo",
+      "bloques": [
+        "CSS completo en <style>",
+        "Kicker + H1 + intro",
+        "Badges",
+        "TOC",
+        "Callouts",
+        "Secciones H2/H3 con contenido",
+        "ListTables (.lt cols-2 y cols-7)",
+        "Cards",
+        "CTAs duales",
+        "FAQs visibles",
+        "Glosario"
+      ],
+      "validar": [
+        "Sin <table>",
+        "Enlaces con UTM",
+        "Headings en RAE",
+        "Sin placeholders"
+      ]
+    },
+    "D_tldr": {
+      "nombre": "TL;DR con título",
+      "formato": "<h2><strong>en dos frases</strong></h2>\n<p>{{frase_1}} {{frase_2}}</p>",
+      "requisitos": [
+        "Frase 1: qué es/qué resuelve + dato medible",
+        "Frase 2: decisión práctica + para quién + siguiente paso"
+      ]
+    },
+    "E_meta": {
+      "nombre": "Meta título y descripción",
+      "meta_titulo": {
+        "longitud_maxima": 65,
+        "formato": "1 KW principal + beneficio concreto (estilo oración)",
+        "ejemplo": "Mejores CPU con NPU: guía de compra 2025"
+      },
+      "meta_descripcion": {
+        "longitud_maxima": 160,
+        "formato": "Ventaja + perfil + CTA suave",
+        "ejemplo": "Descubre las CPUs con NPU integrada para IA local. Comparamos rendimiento, precio y casos de uso reales. Guía actualizada 2025."
+      }
+    },
+    "F_imagen": {
+      "nombre": "Metadatos de imagen",
+      "titulo_imagen": "{{kw_principal}} — {{contexto}}",
+      "alt_imagen": "{{acción/objeto}} con {{kw_principal}} en {{contexto}}",
+      "ejemplos": {
+        "titulo": "CPU AMD Ryzen con NPU — workstation profesional",
+        "alt": "Renderizado 3D con CPU AMD Ryzen y aceleración NPU en estación de trabajo"
+      }
+    },
+    "G_jsonld": {
+      "nombre": "JSON-LD FAQPage",
+      "schema_type": "FAQPage",
+      "plantilla": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"{{pregunta_1}}\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"{{respuesta_1_texto_plano}}\"\n      }\n    }\n  ]\n}",
+      "requisitos": [
+        "4-6 preguntas del artículo",
+        "Respuestas en texto plano (sin HTML)",
+        "Validar con Google Rich Results Test"
+      ]
+    },
+    "H_keywords_relacionadas": {
+      "nombre": "Keywords y temas relacionados (opcional)",
+      "formato": "Lista JSON",
+      "contenido": [
+        "Keywords secundarias no usadas",
+        "Temas relacionados para futuros artículos",
+        "Variantes semánticas"
+      ]
+    }
+  },
+  "orden_entrega": [
+    "A_titulos",
+    "B_outline",
+    "C_articulo_html",
+    "D_tldr",
+    "E_meta",
+    "F_imagen",
+    "G_jsonld",
+    "H_keywords_relacionadas"
+  ]
+}
