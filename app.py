@@ -1,10 +1,18 @@
 import streamlit as st
 import pandas as pd
 import requests
-import plotly.graph_objects as go
-import plotly.express as px
 from datetime import datetime, timedelta
 import time
+
+try:
+    import plotly.graph_objects as go
+    import plotly.express as px
+except ImportError:
+    st.error("Error al cargar Plotly. Reinstalando...")
+    import subprocess
+    subprocess.check_call(["pip", "install", "--upgrade", "plotly"])
+    import plotly.graph_objects as go
+    import plotly.express as px
 
 # Configuración de la página
 st.set_page_config(
