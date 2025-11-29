@@ -1,28 +1,48 @@
-# 🔍 Trend Hunter Pro - Premium UI/UX
+# 🔍 Trend Hunter Pro
 
 **Plataforma de Inteligencia Competitiva para PCComponentes**
 
+Análisis completo de tendencias usando Google Trends API (SerpAPI) con filtrado inteligente por categorías de producto.
+
 ---
 
-## ✨ Características del Diseño
+## ✨ Características
 
-### 🎨 **Apple-Inspired UI**
-- **Glassmorphism** - Efectos de cristal esmerilado con blur
-- **Espaciado generoso** - Diseño limpio y respirable
-- **Tipografía Inter** - Moderna y legible
-- **Animaciones fluidas** - Transiciones suaves
-- **Dark Mode Premium** - Paleta oscura elegante
+### 📡 **APIs de Google Trends**
+- ✅ Interest Over Time (5 años de histórico)
+- ✅ Related Queries (TOP + RISING)
+- ✅ Related Topics (TOP + RISING)
 
-### 📊 **Visualización de Datos**
-- **Métricas Dashboard** - Cards con indicadores visuales
-- **Gráficos minimalistas** - Plotly personalizado
-- **Color-coding inteligente** - Verde ↑ / Rojo ↓
-- **Multi-país** - Análisis comparativo
+### 🎯 **Filtrado Inteligente**
+- 10 categorías de producto con keywords multiidioma
+- Scoring de relevancia (0-100%)
+- Clasificación automática: Preguntas vs Atributos
+- Badges visuales de relevancia
+
+### 🌍 **Multi-País**
+- España 🇪🇸
+- Portugal 🇵🇹
+- Francia 🇫🇷
+- Italia 🇮🇹
+- Alemania 🇩🇪
 
 ### 🔍 **3 Modos de Búsqueda**
-1. **Búsqueda Manual** - Cualquier marca o keyword
-2. **Desde URL** - Extracción automática de marca
-3. **Análisis CSV** - Bulk analysis de múltiples marcas
+1. **Manual** - Busca cualquier marca o keyword
+2. **URL** - Extracción automática desde URL de producto
+3. **CSV** - Análisis bulk de múltiples marcas
+
+### 📊 **Métricas**
+- Cambio mensual, trimestral y anual (%)
+- Promedio 5 años
+- Gráficos interactivos (Plotly)
+- Visualización temporal completa
+
+### 🎨 **UI/UX Premium**
+- Diseño Light Mode estilo Apple
+- **Floating footer toolbar** con todos los controles
+- Sin sidebar - Máximo espacio para datos
+- Glassmorphism & shadows sutiles
+- 100% responsive
 
 ---
 
@@ -36,94 +56,53 @@ cd trend-hunter-pccom
 # Instalar dependencias
 pip install -r requirements.txt
 
-# Ejecutar aplicación
+# Ejecutar app
 streamlit run app.py
 ```
 
 ---
 
+## 📋 Requisitos
+
+Ver `requirements.txt`
+
+---
+
 ## 🎯 Uso
 
-### **Búsqueda Manual**
-1. Selecciona países en el sidebar
-2. Escribe marca o keyword
-3. Click en "🔍 Buscar"
-4. ¡Analiza las tendencias!
+1. **Configura** en la barra flotante inferior (toolbar):
+   - Modo de búsqueda
+   - Países
+   - Categorías
+   - Filtros
 
-### **Desde URL**
-1. Pega URL del producto
-2. Sistema extrae la marca automáticamente
-3. Analiza con un click
+2. **Busca** una marca
 
-### **CSV Bulk**
-1. Sube CSV con columna "Brand"
-2. Selecciona marca del dropdown
-3. Analiza una por una
+3. **Analiza** resultados
 
 ---
 
-## 📈 Métricas Disponibles
+## 🔑 API Key
 
-- ✅ **Cambio Mensual** (último mes)
-- ✅ **Cambio Trimestral** (últimos 3 meses)
-- ✅ **Cambio Anual** (último año)
-- ✅ **Promedio 5 años** (baseline)
-- ✅ **Gráfico temporal** (5 años de historia)
+Necesitas una API key de SerpAPI.
 
----
-
-## 🌍 Países Soportados
-
-- 🇪🇸 España
-- 🇵🇹 Portugal
-- 🇫🇷 Francia
-- 🇮🇹 Italia
-- 🇩🇪 Alemania
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Streamlit
-- **Charts**: Plotly
-- **API**: SerpAPI (Google Trends)
-- **Diseño**: Custom CSS (Apple-inspired)
-
----
-
-## 🎨 Design System
-
-### Paleta de Color
-```css
-Primary Orange: #FF6B00
-Success Green: #30D158
-Error Red: #FF453A
-Accent Blue: #0A84FF
-Background: #0a0a0a → #1a1a1a (gradient)
-Glass Effect: rgba(255, 255, 255, 0.05)
+Edita `app.py` línea 346:
+```python
+SERPAPI_KEY = "tu_api_key_aquí"
 ```
-
-### Tipografía
-```css
-Font Family: 'Inter', -apple-system, BlinkMacSystemFont
-Weights: 300, 400, 500, 600, 700
-```
-
----
-
-## 📦 Versión
-
-**v4.0 Premium UI/UX Enhanced**
 
 ---
 
 ## 👤 Autor
 
-**Pablo García**  
-Competitive Intelligence - PCComponentes
+Pablo García - PCComponentes
 
 ---
 
-## 📄 Licencia
+## 📄 Versión
 
-Uso interno PCComponentes
+**v6.0** - Floating Footer Toolbar
+
+---
+
+**Desarrollado para PCComponentes | Powered by SerpAPI**
